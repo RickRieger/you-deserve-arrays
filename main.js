@@ -30,26 +30,18 @@ function isLongList(array){
 }
 
 function firstItemIsNumber(array){
-  if(array[0] >= 1 || array[0] <= 1){
-     return true;
- }
- else{
-   return false;
- }
+  const firstItem = array[0];
+  if (typeof firstItem === 'number'){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
-
-// ✕ returns true if the first item is a number
-// ✕ returns false if the first item is a string
-// ✕ returns false if the first item is a string, even if its value is 'number'
-// ✕ returns false if the first item is a boolean (1 ms)
-// ✕ returns false if the first item is an array
-// ✕ returns false if the first item is a function
-
-
-
 function secondCharOfThirdString(array){
-
+    const third = array [2];
+    return third [1];
 }
 
 // secondCharOfThirdString
