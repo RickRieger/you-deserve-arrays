@@ -3,6 +3,58 @@
  ******************/
 
 
+function getFirstItemFrom(array){
+  return  array[0];
+}
+
+function getLastItemFrom(array){
+  return array[array.length-1];
+}
+
+function getIndex3(array){
+  if (array.length > 4){
+    return array[3];
+  }
+  if (array.length < 4){
+    return array[array.length - 1]
+  }
+}
+
+function isLongList(array){
+  if(array.length >= 10){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+function firstItemIsNumber(array){
+  if(array[0] >= 1 || array[0] <= 1){
+     return true;
+ }
+ else{
+   return false;
+ }
+}
+
+
+// ✕ returns true if the first item is a number
+// ✕ returns false if the first item is a string
+// ✕ returns false if the first item is a string, even if its value is 'number'
+// ✕ returns false if the first item is a boolean (1 ms)
+// ✕ returns false if the first item is an array
+// ✕ returns false if the first item is a function
+
+
+
+function secondCharOfThirdString(array){
+
+}
+
+// secondCharOfThirdString
+// ✕ returns the second character of the third 
+// string in the given array
 
 
 
@@ -22,7 +74,7 @@ if (typeof getFirstItemFrom === 'undefined') {
 
 if (typeof getLastItemFrom === 'undefined') {
   getLastItemFrom = undefined;
-}
+}3
 
 
 
