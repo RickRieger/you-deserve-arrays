@@ -44,10 +44,6 @@ function secondCharOfThirdString(array){
     return third [1];
 }
 
-// secondCharOfThirdString
-// ✕ returns the second character of the third 
-// string in the given array
-
 
 
 
@@ -66,7 +62,7 @@ if (typeof getFirstItemFrom === 'undefined') {
 
 if (typeof getLastItemFrom === 'undefined') {
   getLastItemFrom = undefined;
-}3
+}
 
 
 
