@@ -12,11 +12,11 @@ function getLastItemFrom(array){
 }
 
 function getIndex3(array){
-  if (array.length > 4){
+  if (array.length >= 4){
     return array[3];
   }
-  if (array.length < 4){
-    return array[array.length - 1]
+  else {
+    return array[array.length - 1];
   }
 }
 
