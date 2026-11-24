@@ -2,51 +2,37 @@
  * YOUR CODE HERE *
  ******************/
 
-
-function getFirstItemFrom(array){
-  return  array[0];
+function getFirstItemFrom(array) {
+  return array[0];
 }
 
-function getLastItemFrom(array){
-  return array[array.length-1];
+// The last index is always one less than the length
+function getLastItemFrom(array) {
+  return array[array.length - 1];
 }
 
-function getIndex3(array){
-  if (array.length >= 4){
+// Index 3 exists only if there are at least 4 items; otherwise fall back to the last item
+function getIndex3(array) {
+  if (array.length >= 4) {
     return array[3];
-  }
-  else {
+  } else {
     return array[array.length - 1];
   }
 }
 
-function isLongList(array){
-  if(array.length >= 10){
-    return true;
-  }
-  else{
-    return false;
-  }
+function isLongList(array) {
+  return array.length >= 10;
 }
 
-function firstItemIsNumber(array){
-  const firstItem = array[0];
-  if (typeof firstItem === 'number'){
-    return true;
-  }
-  else{
-    return false;
-  }
+function firstItemIsNumber(array) {
+  return typeof array[0] === 'number';
 }
 
-function secondCharOfThirdString(array){
-    const third = array [2];
-    return third [1];
+// Third item is index 2; its second character is index 1
+function secondCharOfThirdString(array) {
+  const third = array[2];
+  return third[1];
 }
-
-
-
-
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
